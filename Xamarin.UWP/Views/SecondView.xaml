@@ -1,5 +1,5 @@
 ﻿<views:MvxWindowsPage
-    x:Class="Xamarin.UWP.Views.FirstView"
+    x:Class="Xamarin.UWP.Views.SecondView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Xamarin.UWP.Views"
@@ -11,7 +11,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel Margin="20">
             <TextBlock x:Name="PageName" 
-                       Text="First View"/>
+                       Text="Second View"/>
             <TextBox x:Name="NameBox" 
                      Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      RelativePanel.Below="PageName"
@@ -21,7 +21,7 @@
                        RelativePanel.Below="NameBox"
                        Margin="0, 20, 0, 0"/>
             <Button x:Name="NavigationButton"
-                    Content="Navigate to second page"
+                    Content="Navigate to first page"
                     RelativePanel.Below="NameBlock"
                     Margin="0, 30, 0, 0"
                     Command="{Binding NavigateCommand}"/>

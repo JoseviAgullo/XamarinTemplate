@@ -3,7 +3,7 @@ using MvvmCross.Core.ViewModels;
 
 namespace Xamarin.Core.ViewModels
 {
-    public class FirstViewModel 
+    public class SecondViewModel 
         : MvxViewModel
     {
         private string _hello = "Hello MvvmCross";
@@ -24,7 +24,7 @@ namespace Xamarin.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<SecondViewModel>());
+                return new MvxCommand(() => ShowViewModel<FirstViewModel>());
             }
         }
     }
